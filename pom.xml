@@ -17,8 +17,15 @@
     <dependencies>
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
-            <artifactId>jersey-container-grizzly2-http</artifactId>
+            <artifactId>jersey-container-netty-http</artifactId>
             <version>3.1.10</version>
+        </dependency>
+
+        <!-- Required for Netty (transitive sometimes, but best to be explicit) -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.107.Final</version>
         </dependency>
              
         <dependency>

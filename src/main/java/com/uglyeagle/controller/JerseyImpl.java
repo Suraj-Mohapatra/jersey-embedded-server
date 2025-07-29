@@ -1,4 +1,3 @@
-
 package com.uglyeagle.controller;
 
 import jakarta.ws.rs.GET;
@@ -6,7 +5,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-@Path("/")
+@Path("/jersey/api")
 public class JerseyImpl {
 
     @GET
@@ -36,6 +35,4 @@ public class JerseyImpl {
     public String getXmlResponse() {
         return "<message>Hello, XML!</message>";
     }
-
-    
 }
