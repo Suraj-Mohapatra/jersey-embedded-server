@@ -6,7 +6,7 @@ import org.glassfish.jersey.simple.SimpleContainerFactory;
 
 public class JerseyEmbeddedServer {
 
-    public static final String BASE_URI = "http://localhost:8080/jersey/api/";
+    public static final String BASE_URI = "http://localhost:8080";
 
     public static void main(String[] args) throws Exception {
         final ResourceConfig config = new ResourceConfig()
